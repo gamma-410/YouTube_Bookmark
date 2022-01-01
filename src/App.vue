@@ -14,8 +14,8 @@
 
        <b-collapse id="navbar-toggle-collapse" is-nav>
         <b-navbar-nav class="ml-auto"><br>
-          <b-nac-item><router-link style="color:#000;" to="/">ホーム</router-link></b-nac-item><br>
-          <b-nac-item><router-link style="color:#000;" to="/new">ブックマーク作成</router-link></b-nac-item><br>
+          <b-nav-item><router-link style="color:#000;" to="/">ホーム</router-link></b-nav-item><br>
+          <b-nav-item><router-link style="color:#000;" to="/new">ブックマーク作成</router-link></b-nav-item><br>
           <b-nav-item><router-link style="color:#000;" to="/user">ユーザー情報</router-link></b-nav-item><br>
           <b-nav-item><a v-if="!isInClient" @click="logout" style="color:#000;">ログアウト</a></b-nav-item><br>
           </b-navbar-nav>

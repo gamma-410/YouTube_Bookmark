@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <br>
-    <b-container>
+    <b-container fluid>
     <b-navbar toggleable>
       <b-navbar-brand><router-link style="color:#000;text-decoration:none;" to="/">YouTube Bookmark</router-link></b-navbar-brand>
 
@@ -21,7 +21,7 @@
           </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <b-container>
+    <b-container fluid>
       <router-view/>
     </b-container>
     </b-container>
@@ -86,7 +86,6 @@ body, html, #app {
 }
 
 #nav {
-  padding: 30px;
   background: rgb(240, 240, 240);
 }
 
@@ -97,5 +96,10 @@ body, html, #app {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+.container-fluid{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
 }
 </style>

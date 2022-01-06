@@ -1,12 +1,12 @@
 <template>
   <div class="home"><br>
-  <h4>投稿されたブックマーク一覧</h4>
+  <h4>📚 みんなのブックマーク</h4>
     <p><b>{{ userName }}</b>さん ようこそ！</p>
     <br>
     <div>
-      <div v-html="list" v-for="list in reverseItems" v-bind:key="list"> <!--リバースした reverseItems を list に in する。-->
-      {{ list }}
-      </div>
+        <div v-html="list" v-for="list in reverseItems" v-bind:key="list"><b-row>
+          {{ list }}
+        </b-row></div>
     </div>
   </div>
 </template>
@@ -75,19 +75,21 @@
 
 <style>
   .home, .user {
-      background: rgb(240, 240, 240);
+    background: rgb(240, 240, 240);
+    width: 100%;
   }
 
   .frame-wrapper__video {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .frame-wrapper__video iframe {
+  border-radius: 15px;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -96,14 +98,13 @@
 }
 
 .text{
-  border:1px solid rgb(0, 0, 0);
+  width: 100%;
+  border:1px solid rgb(202, 202, 202);
   box-shadow:rgba(218, 102, 102, 0.059) 0px 0px 6px 3px;
   -webkit-box-shadow:rgba(122, 122, 122, 0.0588235) 0px 0px 6px 3px;
   -moz-box-shadow:rgba(122, 122, 122, 0.0588235) 0px 0px 6px 3px;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  word-wrap:break-all;
+  border-radius: 20px;
+  word-wrap: break-all;
+  margin-bottom: 30px;
 }
 </style>

@@ -5,14 +5,17 @@
       <b-container class="bv-example-row">
         <hr>
         <b-row style="text-align:left;">
-          <b-col sm="2"><img :src="userImg" style="border-radius:100%;" width="100%"></b-col>
-          <b-col sm="10">
-            &nbsp;<h3><b>{{ userName }}</b></h3>
+          <b-col sm="3"><img :src="userImg" style="border-radius:100%;" width="100%"></b-col>
+          <b-col sm="9">
+            <br>&nbsp;<h3><b>{{ userName }}</b></h3>
             <p>{{ statusMessage }}</p>
           </b-col>
         </b-row>
         </b-container>
         <hr>
+        <br>
+        <h4>📖 あなたのブックマーク</h4>
+        <p>ごめんなさい...準備中です。</p>
       </b-container>
     </b-container>
   </div>

@@ -1,24 +1,3 @@
 # youtube-bookmark
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+YouTubeの埋め込み機能を使ってコメントを入れ、ブックマーク＆共有できるアプリです。  
+年越し直前に紅白を見ながら適当に書いたものなので雑ですが、おもちゃ程度に使ってみてね！
